@@ -44,7 +44,7 @@
     "url": "https://github.com/Rawnly/wth-cli/issues"
   },
   "bin": {
-    "wth": "./index.js"
+    "hell": "./index.js"
   },
   "homepage": "https://github.com/Rawnly/wth-cli#readme"
 }
