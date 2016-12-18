@@ -14,6 +14,6 @@
   "license": "MIT",
   "author": "Federico Vitale",
   "bin": {
-    "wth": "./wth.js"
+    "wth": "node wth.js"
   }
 }
