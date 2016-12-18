@@ -9,11 +9,11 @@
   },
   "name": "wth-cli",
   "version": "1.0.0",
-  "description": "Get file description",
-  "main": "index.js",
+  "description": "What the hell is that",
+  "main": "wth.js",
   "license": "MIT",
   "author": "Federico Vitale",
   "bin": {
-    "wth": "./index.js"
+    "wth": "./wth.js"
   }
 }
