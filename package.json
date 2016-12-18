@@ -1,6 +1,6 @@
 {
   "name": "wht-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "What the hell is that!?",
   "main": "index.js",
   "dependencies": {
