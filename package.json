@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "clear": "^0.0.1",
+    "colors": "^1.1.2",
+    "commander": "^2.9.0",
+    "fs": "^0.0.1-security",
+    "ora": "^0.4.0"
+  },
+  "name": "wth-cli",
+  "version": "1.0.0",
+  "description": "Get file description",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Federico Vitale",
+  "bin": {
+    "wth": "./index.js"
+  }
+}
