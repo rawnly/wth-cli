@@ -20,6 +20,10 @@ var type;
 program
 .version(pkg.version);
 
+if ( !program.args ) {
+  console.log('Usage: wth <filename with extension>');
+}
+
 program
   .arguments('<file>')
   .action(function (file) {

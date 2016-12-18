@@ -8,12 +8,12 @@
     "ora": "^0.4.0"
   },
   "name": "wth-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "What the hell is that",
-  "main": "wth.js",
+  "main": "index.js",
   "license": "MIT",
   "author": "Federico Vitale",
   "bin": {
-    "wth": "node wth.js"
+    "wth": "node index.js"
   }
 }
