@@ -1,6 +1,6 @@
 {
   "name": "wth-cli",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "description": "What the hell is that!?!",
   "main": "index.js",
   "repository": "https://github.com/Rawnly/wth-cli.git",
