@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const ora = require('ora');
 const colors = require('colors');
 const chalk = require('chalk');
@@ -21,7 +23,8 @@ program
 .version(pkg.version);
 
 if ( !program.args ) {
-  console.log('Usage: wth <filename with extension>');
+  spinner.text = "Nothing cool here. Try hell -h.";
+  spinner.fail();
 }
 
 program
@@ -130,7 +133,7 @@ program
         break;
 
       default:
-        spinner.text = "Unknown filetype".red;
+        spinner.text = "Unknown filetype ".red;
         spinner.fail();
     }
   });
