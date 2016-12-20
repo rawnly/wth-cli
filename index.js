@@ -8,6 +8,7 @@ const program = require('commander');
 const clear = require('clear');
 
 const pkg = require('./package.json');
+const info = require('./libs/descriptions');
 
 const url = 'https://wikipedia.org/wiki/';
 
@@ -39,7 +40,13 @@ program
         setTimeout(function () {
           spinner.text = "It's a " + "JavaScript".rainbow.bold.underline + " file";
           spinner.succeed()
+
+          console.log("");
+          console.log(info.js);
+          console.log("");
+
           console.log("=>".red + " See more here: " + url + "JavaScript");
+          console.log("");
         }, 250);
         break;
 
@@ -47,7 +54,13 @@ program
         setTimeout(function () {
           spinner.text = "It's a " + "HTML".rainbow.bold.underline + " file";
           spinner.succeed()
+
+          console.log("");
+          console.log(info.html);
+          console.log("");
+
           console.log("=>".red + " See more here: " + url + "HTML");
+          console.log("");
         }, 250);
         break;
 
@@ -55,7 +68,13 @@ program
         setTimeout(function () {
           spinner.text = "It's a " + "CSS".rainbow.bold.underline + " file";
           spinner.succeed()
+
+          console.log("");
+          console.log(info.css);
+          console.log("");
+
           console.log("=>".red + " See more here: " + url + "CSS");
+          console.log("");
         }, 250);
         break;
 
@@ -64,7 +83,13 @@ program
         setTimeout(function () {
           spinner.text = "It's a " + "SASS".rainbow.bold.underline + " file";
           spinner.succeed()
+
+          console.log("");
+          console.log(info.sass);
+          console.log("");
+
           console.log("=>".red + " See more here: " + url + "scss");
+          console.log("");
         }, 250);
         break;
 
@@ -72,7 +97,13 @@ program
         setTimeout(function () {
           spinner.text = "It's a " + "LESS".rainbow.bold.underline + " file";
           spinner.succeed()
+
+          console.log("");
+          console.log(info.less);
+          console.log("");
+
           console.log("=>".red + " See more here: " + url + "Less_(stylesheet_language)");
+          console.log("");
         }, 250);
         break;
 
@@ -80,7 +111,13 @@ program
         setTimeout(function () {
           spinner.text = "It's a " + "MarkDown".rainbow.bold.underline + " file";
           spinner.succeed()
+
+          console.log("");
+          console.log(info.markdown);
+          console.log("");
+
           console.log("=>".red + " See more here: " + url + "Markdown");
+          console.log("");
         }, 250);
         break;
 
@@ -88,7 +125,6 @@ program
         setTimeout(function () {
           spinner.text = "It's a " + "text".rainbow.bold.underline + " file";
           spinner.succeed()
-          console.log("=>".red + " See more here: " + url + "JavaScript");
         }, 250);
         break;
 
@@ -96,7 +132,13 @@ program
         setTimeout(function () {
           spinner.text = "It's a " + "JSON".rainbow.bold.underline + " file";
           spinner.succeed()
+
+          console.log("");
+          console.log(info.json);
+          console.log("");
+
           console.log("=>".red + " See more here: " + url + "JSON");
+          console.log("");
         }, 250);
         break;
 
@@ -105,6 +147,7 @@ program
           spinner.text = "It's a " + ".lock".rainbow.bold.underline + " file";
           spinner.succeed()
           console.log("=>".red + " See more here: https://yarnpkg.com/");
+          console.log("");
         }, 250);
         break;
 
@@ -112,7 +155,13 @@ program
         setTimeout(function () {
           spinner.text = "It's a " + "PHP".rainbow.bold.underline + " file";
           spinner.succeed()
+
+          console.log("");
+          console.log(info.php);
+          console.log("");
+
           console.log("=>".red + " See more here: " + url + "Php");
+          console.log("");
         }, 250);
         break;
 
@@ -120,7 +169,13 @@ program
         setTimeout(function () {
           spinner.text = "It's a " + "CPP".rainbow.bold.underline + " file";
           spinner.succeed()
+
+          console.log("");
+          console.log(info.php);
+          console.log("");
+
           console.log("=>".red + " See more here: " + url + "C");
+          console.log("");
         }, 250);
         break;
 

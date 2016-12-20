@@ -13,5 +13,8 @@
     "commander": "^2.9.0",
     "fs": "^0.0.1-security",
     "ora": "^0.4.0"
+  },
+  "scripts": {
+    "test": "./index.js -V"
   }
 }
