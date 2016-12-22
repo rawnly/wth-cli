@@ -6,6 +6,7 @@ const chalk = require('chalk');
 const fs = require('fs');
 const program = require('commander');
 const clear = require('clear');
+const path = require('path');
 
 const pkg = require('./package.json');
 const info = require('./libs/descriptions');
@@ -33,10 +34,10 @@ program
   .action(function (file) {
     clear();
     spinner.start();
-    type = file.split('.')[1];
+    type = path.extname(file);// file.split('.')[1];
 
     switch (type) {
-      case 'js':
+      case '.js':
         setTimeout(function () {
           spinner.text = "It's a " + "JavaScript".rainbow.bold.underline + " file";
           spinner.succeed()
@@ -50,7 +51,7 @@ program
         }, 250);
         break;
 
-      case 'html':
+      case '.html':
         setTimeout(function () {
           spinner.text = "It's a " + "HTML".rainbow.bold.underline + " file";
           spinner.succeed()
@@ -64,7 +65,7 @@ program
         }, 250);
         break;
 
-      case 'css':
+      case '.css':
         setTimeout(function () {
           spinner.text = "It's a " + "CSS".rainbow.bold.underline + " file";
           spinner.succeed()
@@ -78,8 +79,8 @@ program
         }, 250);
         break;
 
-      case 'sass':
-      case 'scss':
+      case '.sass':
+      case '.scss':
         setTimeout(function () {
           spinner.text = "It's a " + "SASS".rainbow.bold.underline + " file";
           spinner.succeed()
@@ -93,7 +94,7 @@ program
         }, 250);
         break;
 
-      case 'less':
+      case '.less':
         setTimeout(function () {
           spinner.text = "It's a " + "LESS".rainbow.bold.underline + " file";
           spinner.succeed()
@@ -107,7 +108,7 @@ program
         }, 250);
         break;
 
-      case 'md':
+      case '.md':
         setTimeout(function () {
           spinner.text = "It's a " + "MarkDown".rainbow.bold.underline + " file";
           spinner.succeed()
@@ -121,14 +122,14 @@ program
         }, 250);
         break;
 
-      case 'txt':
+      case '.txt':
         setTimeout(function () {
           spinner.text = "It's a " + "text".rainbow.bold.underline + " file";
           spinner.succeed()
         }, 250);
         break;
 
-      case 'json':
+      case '.json':
         setTimeout(function () {
           spinner.text = "It's a " + "JSON".rainbow.bold.underline + " file";
           spinner.succeed()
@@ -142,7 +143,7 @@ program
         }, 250);
         break;
 
-      case 'lock':
+      case '.lock':
         setTimeout(function () {
           spinner.text = "It's a " + ".lock".rainbow.bold.underline + " file";
           spinner.succeed()
@@ -151,7 +152,7 @@ program
         }, 250);
         break;
 
-      case 'php':
+      case '.php':
         setTimeout(function () {
           spinner.text = "It's a " + "PHP".rainbow.bold.underline + " file";
           spinner.succeed()
@@ -165,7 +166,7 @@ program
         }, 250);
         break;
 
-      case 'cpp':
+      case '.cpp':
         setTimeout(function () {
           spinner.text = "It's a " + "CPP".rainbow.bold.underline + " file";
           spinner.succeed()
@@ -179,7 +180,7 @@ program
         }, 250);
         break;
 
-      case 'app':
+      case '.app':
         setTimeout(function () {
           spinner.text = "It's a simple " + "Application".rainbow.bold;
           spinner.color = 'green';
@@ -188,7 +189,7 @@ program
         break;
 
       default:
-        spinner.text = "Unknown filetype ".red;
+        spinner.text = "Unknown filetype " + type;
         spinner.fail();
     }
   });
